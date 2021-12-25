@@ -21,7 +21,13 @@
 
 5. Click Play Now!
 
+Single Player Example:
+
 ![image](https://user-images.githubusercontent.com/67389462/147394308-f72e5451-e7e0-4730-84ff-9a44d91de76f.png)
+
+Multiplayer Example:
+
+![image](https://user-images.githubusercontent.com/67389462/147394468-fc419c6f-1a84-423d-96c7-48145e517b87.png)
 
 **Objectives of the game**:
 Hit the yellow circles
@@ -50,3 +56,16 @@ _#Note: The grey circles make you lose a life and automatically hurt you on cont
       
 **Other Screenshots/Game Features**
 
+Game Over Screen:
+
+![image](https://user-images.githubusercontent.com/67389462/147394379-e551621b-ac6e-4a01-97a6-0c726212a8af.png)
+
+
+Statistics:
+
+![image](https://user-images.githubusercontent.com/67389462/147394400-ab7e8fea-d670-44f0-8264-ceac1e4fdcba.png)
+
+
+Score and High Score Tracker:
+
+![image](https://user-images.githubusercontent.com/67389462/147394411-000a9218-2aeb-4eae-a686-4f69697d098a.png)
