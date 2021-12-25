@@ -178,30 +178,30 @@ class MusicRush(object):
         pygame.init()
         pygame.mixer.init()
         pygame.font.init()
-        hitSound = pygame.mixer.Sound('bass.wav')
-        hurtSound = pygame.mixer.Sound('hurtSound.wav')
-        width = width 
-        height = height 
-        fps = fps 
-        filename = filename 
-        highscore = highscore
-        textFile = textFile
-        player = Player(width, height)
-        fftSize = 512 
-        hopSize = fftSize // 2
-        beats, onsets, pitches, audioTempo = audioSetup(
-                                filename, fftSize, hopSize)
-        bpms, bpmsChange = self.getChangeInTempo(beats)
-        bpmsAvg = np.mean(bpms)
-        enemiesList, lightsList, arcsList = createEnemies(beats, onsets, 
-                                  pitches, bpms, width, height, 1)
-        audioSource, stream = self.readFile(
-                                filename, fftSize, hopSize)
-        myfont = pygame.font.SysFont('impact', 30)
-        screen = pygame.display.set_mode((width, height))
-        fps = 60
-        gameOver = False 
-        accuracyList = [] 
+        self.hitSound = pygame.mixer.Sound('bass.wav')
+        self.hurtSound = pygame.mixer.Sound('hurtSound.wav')
+        self.width = width 
+        self.height = height 
+        self.fps = fps 
+        self.filename = filename 
+        self.highscore = highscore
+        self.textFile = textFile
+        self.player = Player(width, height)
+        self.fftSize = 512 
+        self.hopSize = self.fftSize // 2
+        self.beats, self.onsets, self.pitches, self.audioTempo = audioSetup(
+                                self.filename, self.fftSize, self.hopSize)
+        self.bpms, self.bpmsChange = self.getChangeInTempo(self.beats)
+        self.bpmsAvg = np.mean(self.bpms)
+        self.enemiesList, self.lightsList, self.arcsList = createEnemies(self.beats, self.onsets, 
+                                  self.pitches, self.bpms, width, height, 1)
+        self.audioSource, self.stream = self.readFile(
+                                self.filename, self.fftSize, self.hopSize)
+        self.myfont = pygame.font.SysFont('impact', 30)
+        self.screen = pygame.display.set_mode((width, height))
+        self.fps = 60
+        self.gameOver = False 
+        self.accuracyList = [] 
 
     def pyaudio_callback(self, _in_data, _frame_count, _time_info, _status):
         samples, read = self.audioSource()
@@ -897,11 +897,7 @@ def createEnemies(beats, onsets, pitches, bpms, width, height, players):
                 enemiesList.append(Enemy(beats[numBeats], width, height, players))
     return enemiesList, lightsList, arcsList
 
-def main():
-    player = Player(500, 700)
-    player1 = Player1(500, 700)
-    player2 = Player2(500, 700)
-    StartMenu().run()
-
-if __name__ == '__main__':
-    main()
+player = Player(500, 700)
+player1 = Player1(500, 700)
+player2 = Player2(500, 700)
+StartMenu().run()
