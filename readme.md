@@ -34,11 +34,19 @@ Tutorial Screen:
 ![tutorialScreen](https://user-images.githubusercontent.com/67389462/147394323-01e7ebdf-f6ad-492a-b238-673eee6adc98.png)
 
 **Commands**:
-1 player: 
+
+1 player:
+
 P1 - Left and right arrow keys to move, SPACE bar to hit a circle
+
 2 players: 
+
 P1 - Left and right arrow keys to move, UP arrow to hit a circle
+
 P2 - A and D keys, W key to hit a circle
 
 _#Note: The grey circles make you lose a life and automatically hurt you on contact.
        The yellow circles gives you points, but to get them, you need to eat them manually._
+      
+**Other Screenshots/Game Features**
+
