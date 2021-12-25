@@ -1,3 +1,6 @@
+**DISCLAIMER: This is my first coding project, created in December 2019. The game may not be optimized, and looking back on it, there are a lot of changes to be made. However, I do hope that you enjoy looking through this project!**
+
+
 **Project Name**: Music Rush
 
 **Description**: An interactive rhythm game that uses any .wav file to generate a playable map that corresponds with the beats and pitches of the song.
